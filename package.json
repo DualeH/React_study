@@ -1,15 +1,17 @@
 {
   "name": "React_study",
   "version": "1.0.0",
-  "description": "啦啦啦",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "server": "webpack-dev-server --open"
+    "dev": "cross-env webpack-dev-server --mode development",
+    "build": "npm run lint && cross-env npm run clean && webpack --mode production",
+    "clean": "",
+    "lint": ""
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/DualeH/React_study.git"
+    "url": "git+https://github.com/DualeH/React_study.git"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/DualeH/React_study#readme",
   "devDependencies": {
+    "autoprefixer": "^9.5.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-import": "^1.11.0",
@@ -37,13 +40,20 @@
     "html-withimg-loader": "^0.1.16",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "yargs-parser": "^13.0.0"
   },
   "dependencies": {
+    "cross-env": "^5.2.0",
+    "path": "^0.12.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^6.0.1",

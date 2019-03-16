@@ -1,6 +1,6 @@
-export const GET_USER_INFO_REQUEST = 'GET_USER_INFO_REQUEST'
-export const GET_USER_INFO_SUCCESS = 'GET_USER_INFO_SUCCESS'
-export const GET_USER_INFO_FAIL = 'GET_USER_INFO_FAIL'
+export const GET_USER_INFO_REQUEST = "GET_USER_INFO_REQUEST";
+export const GET_USER_INFO_SUCCESS = "GET_USER_INFO_SUCCESS";
+export const GET_USER_INFO_FAIL = "GET_USER_INFO_FAIL";
 
 function getUserInfoRequest() {
     return {
@@ -16,10 +16,11 @@ function getUserInfoSuccess(userInfo) {
 }
 
 function getUserInfoFail() {
-    return{
+    return {
         type: GET_USER_INFO_FAIL
     }
 }
+
 export function getUserInfo() {
     return function (dispatch) {
         dispatch(getUserInfoRequest());

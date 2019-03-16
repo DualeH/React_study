@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-export default class Home extends Component {
+export default class Page1 extends Component {
     render() {
         return (
             <div>
-                this is Page1~hi xht
+                this is Page1~hi xht  111
             </div>
         )
     }

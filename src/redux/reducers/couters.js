@@ -1,11 +1,11 @@
-import { INCREMENT, DECREMENT, RESET } from '../actions/counter';
+import { INCREMENT, DECREMENT, RESET } from '../actions/couters';
 
 /*
 * 初始化state
 */
 const initState = {
     count: 0,
-}
+};
 
 /*
 * reducer

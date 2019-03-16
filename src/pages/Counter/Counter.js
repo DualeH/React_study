@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { increment, decrement, reset } from 'actions/counter';
+import { increment, decrement, reset } from 'actions/couters';
 
 import { connect } from 'react-redux';
 
@@ -27,7 +27,7 @@ class Counter extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        counter: state.counter,
+        counter: state.couter,
     };
 };
 
